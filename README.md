@@ -6,7 +6,7 @@ A modern, fully responsive portfolio website built with **Tailwind CSS** and **V
 
 https://armanfdk.github.io/Third-Project-Portfolio-Website-Tailwind/
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack 
 
 *   **HTML5** - Semantic structure
 *   **Tailwind CSS** - Utility-first styling for rapid UI development
