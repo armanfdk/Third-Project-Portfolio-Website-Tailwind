@@ -9,7 +9,7 @@
   <br>
 
   <!-- Live Demo Button -->
-  <a href="https://armanfdk.github.io/Third-Project-Portfolio-Website-Tailwind-/" target="_blank">
+  <a href="https://armanfdk.github.io/Third-Project-Portfolio-Website-Tailwind/" target="_blank">
     <img src="https://img.shields.io/badge/View_Live_Demo-38B2AC?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" style="transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
   </a>
 </div>
