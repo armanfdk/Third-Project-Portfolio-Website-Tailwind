@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: rgba(36, 36, 36, 1);
+    --color-secondary: rgba(46, 46, 46, 1);
+    --color-accent: rgba(227, 113, 107, 1);
+    --color-text: rgba(255, 255, 255, 1);
+
+    --text-header: 50px;
+    --spacing-big: 200px;
+    --shadow-top: 0px 50px 50px 30px #556324;
+    --animate-jadid: anime1 1s alternate infinite;
+}
+
+@layer components {
+    .nav {
+        @apply flex flex-col fixed rounded gap-6 top-0 right-0 bg-accent/40 p-24 z-20 backdrop-blur-lg scale-y-0 origin-bottom transition-transform duration-300
+    }
+
+    .nav-links {
+        @apply text-lg p-2 relative transition-colors hover:text-secondary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-2/4 after:h-px hover:after:origin-left after:bg-secondary after:scale-x-0 hover:after:scale-x-100 after:transition after:origin-right
+    }
+
+    .nav.open {
+        @apply scale-y-100 origin-top
+    }
+
+    .hamburger {
+        @apply fixed bg-accent top-[30px] right-2/4 translate-x-[50%] h-8 w-12 z-30 cursor-pointer py-5 rounded before:content-[''] before:h-0.5 before:w-2/3 before:bg-text before:absolute before:top-4 before:left-2 before:transition after:content-[''] after:h-0.5 after:w-1/3 after:bg-text after:absolute after:top-6 after:left-2 after:transition
+    }
+
+    .hamburger.close {
+        @apply before:rotate-45 before:translate-y-1 after:w-2/3 after:-rotate-45 after:-translate-y-1
+    }
+
+    .before {
+        @apply before:absolute before:top-2/4 before:translate-y-[-50%] before:left-0 before:transition before:content-[''] before:rounded before:bg-accent;
+    }
+
+    .after {
+        @apply after:absolute after:top-0 after:left-0 after:transition after:content-[''] rounded bg-accent w-5 h-5;
+    }
+
+    .afterlg {
+        @apply lg:after:absolute lg:after:-bottom-6 lg:after:left-[50%] lg:after:translate-x-[-50%] lg:after:transition lg:after:content-[''] lg:after:rounded lg:after:bg-accent lg:after:w-16 lg:after:h-2;
+
+    }
+
+    .afterlg2 {
+        @apply lg:after:absolute lg:after:bottom-0 lg:after:left-0 lg:after:transition lg:after:content-[''] lg:after:rounded lg:after:bg-accent lg:after:w-3/4 lg:after:h-5;
+
+    }
+
+    .aftercol {
+        @apply xl:after:content-[''] xl:after:w-5 xl:after:h-full xl:after:bg-accent xl:after:absolute xl:after:top-0 xl:after:left-0 xl:after:rounded-full;
+    }
+
+    .figurefct {
+        @apply after:absolute after:top-0 after:left-0 after:transition after:content-[''] after:bg-accent/60 after:w-full after:h-full after:z-10 after:rounded after:backdrop-blur-sm after:scale-x-0 hover:after:scale-x-100 after:origin-left hover:after:origin-right;
+    }
+
+    .figcapefct {
+        @apply absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-text z-[11] scale-x-0 group-hover:scale-x-100 transition origin-left group-hover:origin-right lg:font-bold xl:text-xl;
+    }
+
+    .tupe {
+        @apply before:absolute before:top-0 before:left-0 before:transition before:content-[''] before:rounded-full before:bg-accent before:h-6 before:-z-10;
+    }
+
+    .beforexl {
+        @apply xl:before:absolute xl:before:top-0 xl:before:left-0 xl:before:content-[''] xl:before:h-full xl:before:w-5 xl:before:bg-accent xl:before:rounded-full;
+    }
+
+    .newafter {
+        @apply after:absolute after:top-0 after:left-0 after:transition after:content-[''] after:rounded after:bg-accent after:w-full after:h-full;
+    }
+}
+
+@layer base {
+    img {
+        @apply h-full rounded object-cover;
+    }
+}
+
+@layer utilities {
+    .h2 {
+        @apply text-2xl font-bold capitalize lg:text-3xl text-text
+    }
+}
