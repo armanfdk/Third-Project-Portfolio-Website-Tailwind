@@ -80,6 +80,10 @@
     img {
         @apply h-full rounded object-cover;
     }
+
+    body {
+        @apply bg-primary
+    }
 }
 
 @layer utilities {
