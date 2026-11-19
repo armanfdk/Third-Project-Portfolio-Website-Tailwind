@@ -419,43 +419,53 @@
         </div>
     </footer>
     
- 
-<footer class="mt-20 mb-8 bg-[#1e1e1e] border-t-2 border-b-2 border-[#ff6b6b]/30 pt-14 pb-10 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        
+   
+<footer class="bg-[#1a1a1a] border-t border-[#ff6b6b]/20 py-12 px-4 sm:px-6 lg:px-8 w-full relative overflow-hidden">
+    
+    
+    <div class="absolute inset-0 flex justify-center items-center opacity-30 pointer-events-none">
+        <div class="w-96 h-96 bg-[#ff6b6b] rounded-full filter blur-[100px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
        
-        <div class="text-center md:text-left text-gray-300 text-xl md:text-2xl font-medium">
-            <p>
-                Developed with <span class="text-[#ff6b6b] text-3xl inline-block animate-pulse">♥</span> and coded by 
-                <a href="https://github.com/armanfdk" target="_blank" class="text-white hover:text-[#ff6b6b] transition-colors duration-300 font-extrabold tracking-wide">Arman</a>
+        <div class="text-center md:text-left text-gray-400 text-xl md:text-2xl font-light tracking-wide group">
+            <p class="transition-colors duration-500 group-hover:text-white">
+                Developed with <span class="text-[#ff6b6b] text-3xl inline-block animate-pulse drop-shadow-[0_0_10px_rgba(255,107,107,0.8)]">♥</span> and coded by 
+                <a href="https://github.com/armanfdk" target="_blank" class="relative text-white font-bold tracking-wider hover:text-[#ff6b6b] transition-colors duration-300 ml-1">
+                    Arman
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff6b6b] transition-all duration-300 group-hover:w-full"></span>
+                </a>
             </p>
         </div>
- 
-        <div class="flex items-center gap-10">
-            
-            <a href="https://www.linkedin.com/in/arman-fadakar/" target="_blank" rel="noopener noreferrer" 
-               class="group relative text-gray-400 hover:text-[#ff6b6b] transition-all duration-300 transform hover:-translate-y-2">
-                <i class="fa-brands fa-linkedin text-4xl"></i>
-                <span class="absolute -top-9 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm text-[#ff6b6b] font-semibold whitespace-nowrap">LinkedIn</span>
-            </a>
-            
+
+      
+        <div class="flex items-center gap-8 md:gap-10">
           
-            <a href="https://github.com/armanfdk" target="_blank" rel="noopener noreferrer" 
-               class="group relative text-gray-400 hover:text-[#ff6b6b] transition-all duration-300 transform hover:-translate-y-2">
-                <i class="fa-brands fa-github text-4xl"></i>
-                <span class="absolute -top-9 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm text-[#ff6b6b] font-semibold whitespace-nowrap">GitHub</span>
+            <a href="https://www.linkedin.com/in/arman-fadakar/" target="_blank" rel="noopener noreferrer" 
+               class="group relative text-gray-500 hover:text-[#ff6b6b] transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6">
+                <i class="fa-brands fa-linkedin text-4xl"></i>
+                <span class="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs text-[#ff6b6b] font-bold bg-[#1a1a1a] px-2 py-1 rounded border border-[#ff6b6b]/30 whitespace-nowrap">LinkedIn</span>
             </a>
             
            
+            <a href="https://github.com/armanfdk" target="_blank" rel="noopener noreferrer" 
+               class="group relative text-gray-500 hover:text-[#ff6b6b] transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6">
+                <i class="fa-brands fa-github text-4xl"></i>
+                <span class="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs text-[#ff6b6b] font-bold bg-[#1a1a1a] px-2 py-1 rounded border border-[#ff6b6b]/30 whitespace-nowrap">GitHub</span>
+            </a>
+            
+          
             <a href="https://www.instagram.com/armanfrs" target="_blank" rel="noopener noreferrer" 
-               class="group relative text-gray-400 hover:text-[#ff6b6b] transition-all duration-300 transform hover:-translate-y-2">
+               class="group relative text-gray-500 hover:text-[#ff6b6b] transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6">
                 <i class="fa-brands fa-instagram text-4xl"></i>
-                <span class="absolute -top-9 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm text-[#ff6b6b] font-semibold whitespace-nowrap">Instagram</span>
+                <span class="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs text-[#ff6b6b] font-bold bg-[#1a1a1a] px-2 py-1 rounded border border-[#ff6b6b]/30 whitespace-nowrap">Instagram</span>
             </a>
         </div>
         
     </div>
 </footer>
+
     <script src="src/js/index.js"></script>
 </body>
 
